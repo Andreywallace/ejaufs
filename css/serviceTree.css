@@ -1,0 +1,208 @@
+#detalhes-servicos {
+    background-color: #c40035;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    color: white;
+    padding: 20px 0 25px 0;
+    font-family: 'ubuntu';
+    position: relative;
+    transform: skewY(-1deg);
+}
+
+#detalhes-servicos .container{
+          transform: skewY(5deg);
+    
+}
+
+
+
+
+/* TREE DIAGRAM*/
+
+
+
+#detalhes-servicos  ul {
+  margin-left: 30px;
+  counter-reset: item;
+    list-style: none;
+}
+
+.wtree li {
+ 
+  list-style-type: none;
+    padding-bottom: 5px;
+  margin: 10px 0 10px 30px;
+  position: relative;
+   
+}
+.wtree li:before {
+  content: "";
+  counter-increment: item;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 30px;
+  height: 15px;
+}
+.wtree li:after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: -30px;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  width: 30px;
+  height: 100%;
+}
+.wtree li:last-child:after {
+  display: none;
+}
+.wtree li span {
+    display: block;
+    border: 0px solid #312f2f;
+    padding: 5px 5px;
+    color: #ffffff;
+    text-decoration: none;
+    background: #c40035;
+        font-size: 14px;
+    font-weight: 500;
+    font-family: 'Roboto';
+}
+
+
+.wtree li span:hover, .wtree li span:focus {
+  color: #ffffff;
+  border: 0px solid #312f2f;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.wtree li span:hover + ol li span, .wtree li span:focus + ol li span {
+  color: #000;
+  border: 2px solid white;
+}
+.wtree li span:hover + ol li:after, .wtree li span:hover + ol li:before, .wtree li span:focus + ol li:after, .wtree li span:focus + ol li:before {
+  border-color: white;
+}
+
+#detalhes-servicos  li span {
+    background-color: #423f93;
+    color: white;
+}
+
+#detalhes-servicos  li li span {
+  background-color: #DDEBC8;
+}
+
+#detalhes-servicos  li li li span {
+  background-color: #FEFCD5;
+}
+
+#detalhes-servicos  .display {
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+#detalhes-servicos  input, label {
+  margin: 12px 0px 20px 0px;
+}
+
+#detalhes-servicos  label {
+  padding-left: 6px;
+  padding-right: 12px;
+}
+
+
+
+/* TOOLTIP */
+/**
+ * Tooltip Styles
+ */
+
+/* Add this attribute to the element that needs a tooltip */
+[data-tooltip] {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+    
+             
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
+
+/* Hide the tooltip content by default */
+[data-tooltip]:before,
+[data-tooltip]:after {
+  visibility: hidden;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  pointer-events: none;
+    
+    
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 5px;
+  margin-left: -80px;
+  padding: 7px;
+  width: 160px;
+  border-radius: 10px;
+  background-color: white;
+  background-color: hsla(0, 0%, 100%, 0.9);
+
+  color: black;
+  content: attr(data-tooltip);
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  width: 0;
+  border-top: 5px solid white;
+  border-top: 5px solid hsla(0, 0%, 100%, 0.9);
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  content: " ";
+  font-size: 0;
+  line-height: 0;
+      margin-bottom: 10px;
+    
+    
+    }
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+    
+      -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+       -webkit-animation-name: fadeIn;
+            animation-name: fadeIn;
+
+    
+}
+/* FIM TOOLTIP*/
+
+

@@ -1,0 +1,114 @@
+
+/* NAVBAR */
+#header{
+
+}
+
+#body {
+  background-color:#fff;
+}
+
+.navbar,
+#main {
+  position: relative; 
+}
+.navbar.navbar-default {
+  z-index: 150;
+  margin-bottom: -61px;
+     box-shadow: 0 1px 1px rgba(0,0,0,0.74);
+    background-color: rgba(0, 0, 0, 0.74);
+    border-color:rgba(0, 0, 0, 0.74);
+}
+
+
+
+#main {
+  background-color: #fff;
+  padding:0px 0 0px 0;
+}
+
+
+.nav>li {
+    margin-bottom: 0px;
+}
+
+.navbar-brand{
+    padding: 5px !important;
+    height: 60px !important; 
+}
+
+/* FIM NAVBAR*/
+
+
+
+.navbar {
+  background-color: #eaeaea;
+    min-height: 60px !important;
+}
+
+ .navbar-nav>li>a {
+     text-transform: uppercase;
+     font-family:"Ubuntu";
+    color: #ffffff !important;
+         font-size: 18px;
+}
+
+/* eFEITO DE HOVVER DO MENU */
+ .navbar-nav>li>a:hover {
+   
+}
+
+
+
+ .navbar-nav>li>a::hover,
+ .navbar-nav>li>a::active {
+  letter-spacing: 5px;
+}
+
+
+
+.navbar-nav>li>a:after,
+ .navbar-nav>li>a:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 0.03em solid rgba(255, 255, 255, 0);
+bottom:0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 280ms ease-in-out;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+ .navbar-nav>li>a:hover:after,
+ .navbar-nav>li>a:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #fff;
+  -webkit-transition: width 350ms ease-in-out;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.navbar-nav>li>a:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+
+
+/* eFEITO DE HOVVER DO MENU */
+
+
+
+
+
+@media (min-width: 768px){
+.navbar-right {
+    margin-top: 5px !important;
+}
+}
+
+

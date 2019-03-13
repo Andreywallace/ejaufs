@@ -1,0 +1,1768 @@
+BODY {
+  background: #282931;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Varela Round', sans-serif;
+  height: 100%;
+    
+  
+  
+}
+
+
+/* The only rule that matters */
+#video-background {
+/*  making the video fullscreen  */
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -11;
+}
+
+.arrow {
+    text-align: center;
+}
+
+#icon-saiba-mais{
+    color: azure;
+        text-shadow: 0 1px 20px rgba(0, 0, 0, 0.61), 0 1px 1px rgba(0, 0, 0, 0.57);
+    transition: text-shadow 0.5s  ease-in-out;
+      transition: color 0.5s  ease-out;
+   
+    
+}
+
+#icon-saiba-mais:hover{
+    color: red;
+        text-shadow: 0 10px 20px rgba(0, 0, 0, 0.61), 0 6px 6px rgba(0, 0, 0, 0.57);
+}
+
+p{
+    font-size: 16px;
+    
+}
+
+@font-face {
+    font-family: 'Gotham'; /*a name to be used later*/
+    src: url('../fonts/GothamMediumRegular.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Ubuntu2'; /*a name to be used later*/
+    src: url(../fonts/Ubuntu-Bold.ttf); /*URL to font*/
+}
+
+
+canvas {
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0px;
+}
+
+
+.center-vertical{
+ position: relative;
+    top: 50%;
+    transform: translateY(40%);   
+    
+}
+
+
+    
+
+.title{
+    text-align: center;
+    font-family: 'Gotham';
+    font-weight: 800;
+    color: azure;
+       text-shadow: 0 10px 20px rgba(0, 0, 0, 0.61), 0 6px 6px rgba(0, 0, 0, 0.57);
+    font-size: 3rem;
+}
+
+
+
+.img-title{
+        padding-bottom: 30px;
+   width: 95%;
+}
+
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#particles-js{
+    margin-left: 0px;
+    
+}
+
+.particles-js-canvas-el{
+   /*  SEM VIDEO BACKGROUND
+      background: url(http://itecse.org/img/bg_video.png) bottom left repeat,
+        url(../img/eja.png) top left  fixed;
+    background-size: auto, cover;
+       filter: brightness(200%);
+    */
+    
+          background: url(http://itecse.org/img/bg_video.png) bottom left repeat;
+    background-size: auto;
+    
+ 
+}
+
+a {
+  color: #bbbbc4;
+  text-decoration: none;
+  -o-transition: .2s;
+  -ms-transition: .2s;
+  -moz-transition: .2s;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+a:hover {
+  color: #fc3565;
+}
+
+h1 {
+  color: #fc3565;
+  padding-bottom: 0px;
+  margin-bottom: 1%;
+}
+
+h2 {
+  color: #555560;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  font-family: 'Monoton', cursive;
+  color: white;
+  font-size: 8rem;
+}
+
+.top {
+  padding-bottom: 5rem;
+}
+
+.pulled {}
+
+.pulled ul li {
+  list-style: none;
+  margin-right: 2rem;
+  font-size: 1.8rem;
+}
+
+.pulled h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.pulled ul li span{
+  font-size:1.2rem;
+}
+
+.footer{
+padding-top:5rem;
+}
+
+.footer p{
+  color:white;
+  font-size:1.2rem;
+}
+
+
+
+
+/* Mobile first queries */
+
+
+/* Larger than mobile */
+
+@media (max-width: 549px) {
+    
+    .title{
+            font-size: 2.8rem;
+    }
+    
+    .parallax h1 {
+   font-size: 2.4em;
+}
+}
+
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+    
+        .title{
+            font-size: 3.2rem;
+    }
+    
+    .parallax h1 {
+    font-size: 2.4em;
+}
+    
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+    
+        .title{
+            font-size: 3.7rem;
+    }
+    
+    #icon-saiba-mais{
+        font-size: 3.2em;
+        
+    }
+    
+    .parallax h1 {
+    font-size: 3em;
+}
+}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+    
+           .title{
+            font-size: 5.0rem;
+    }
+    
+    .parallax h1 {
+    font-size: 4em;
+}
+}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6.0rem;
+  }
+    
+    .parallax h1 {
+    font-size: 4.2em;
+}
+}
+
+
+
+
+/* BUTTON HOME*/
+.btn-center{
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    
+}
+
+.mbtn {
+  flex: 1 1 auto;
+font-size: 1.3em;
+  border: 2px solid #f7f7f7;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.7s;
+  color:white;
+}
+.mbtn:after {
+  position: absolute;
+  transition: 0.7s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #c40035;
+    color: white;
+    border: 2px solid #c40035;
+}
+.mbtn:after {
+  height: 120%;
+  left: -10%;
+  transform: skewX(0deg);
+  z-index: -1;
+}
+.mbtn:hover {
+  cursor: pointer;
+    color:white;
+}
+.mbtn:hover:after {
+  width: 100%;
+  left: 0;
+}
+/* FIM BUTTON HOME*/
+
+
+/*Servicos */
+#servicos
+{
+   background: url(../img/dummy.png);
+        margin-top: 60px;
+    margin-bottom: -25px;
+}
+
+
+#servicos h2, #servicos p, #servicos h3, #servicos small{
+    color: white;
+} 
+
+#network, #networksecond {
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    left: 0;
+    max-width: 100%;
+}
+
+
+.var_nav
+{
+position:relative;
+/*background:#727376; */
+    background: radial-gradient( farthest-corner at 800px 0, #414141, black);
+
+height:70px;
+margin-bottom:5px;
+}
+
+.link_bg
+{
+ width:70px;
+ height:70px;
+ position:absolute;
+ background:#c40035;
+ color:#fff;
+ z-index:2;
+}
+.link_bg i
+{
+ position:relative;
+}
+.link_title
+{
+position:absolute;
+width:100%;
+z-index:3;
+color:#fff;
+}
+
+.link_title:hover .icon
+{
+-webkit-transform:rotate(360deg);
+-moz-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+-ms-transform:rotate(360deg);
+transform:rotate(360deg);  
+}
+
+.var_nav:hover .link_bg
+{
+width:100%;
+background:#c40035;
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;  
+}
+.var_nav:hover a
+{
+font-weight:bold;
+-webkit-transition:all .5s ease-in-out;
+-moz-transition:all .5s ease-in-out; 
+-o-transition:all .5s ease-in-out; 
+-ms-transition:all .5s ease-in-out;
+ transition:all .5s ease-in-out;  
+}
+
+#ul-servicos  .icon
+{
+position:relative;
+width:70px;
+height:70px;
+text-align:center;
+color:#fff;
+-webkit-transition:all .5s ease-in-out;
+-moz-transition:all .5s ease-in-out; 
+-o-transition:all .5s ease-in-out; 
+-ms-transition:all .5s ease-in-out;   
+float:left;
+transition:all .5s ease-in-out;   
+float:left;  
+        margin-top: -5px;
+}
+.icon i{top:22px;position:relative;}
+
+#ul-servicos span
+{
+margin-top:25px;
+display:block;
+        font-size: 17px;
+}
+
+#ul-servicos span::before, #ul-servicos span::after{
+    height:0px;
+    
+}
+
+#ul-servicos a{
+display:block;
+position:absolute;
+float:left;
+font-family: 'Ubuntu';
+color:#fff;
+text-decoration:none;
+width:100%;
+height:70px;
+       text-align:center; 
+}
+
+
+@media (max-width:600px) {
+    #ul-servicos a {
+            padding-left: 50px;
+}
+}
+
+
+
+
+/* FIM SERVICOS */
+
+
+
+
+/* MODAL FULL SCREEN */
+
+
+.modal.modal-fullscreen {
+  /* Maximize the main wrappers on the screen */
+  /* Make the parent wrapper of the modal box a full-width block */
+  /* Remove borders and effects on the content */
+  /**
+	 * /!\ By using this feature, you force the header and footer to be placed
+	 * in an absolute position. You must handle by yourself the margin of the
+	 * content.
+	 */
+}
+.modal.modal-fullscreen .modal-dialog,
+.modal.modal-fullscreen .modal-content {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.modal.modal-fullscreen .modal-dialog {
+  margin: 0;
+  width: 100%;
+  animation-duration:0.6s;
+}
+.modal.modal-fullscreen .modal-content {
+  border: none;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: inherit;
+  -moz-box-shadow: inherit;
+  -o-box-shadow: inherit;
+  box-shadow: inherit;
+  /* change bg color below */
+  background:black; 
+}
+.modal.modal-fullscreen.force-fullscreen {
+  /* Remove the padding inside the body */
+}
+.modal.modal-fullscreen.force-fullscreen .modal-body {
+  padding: 0;
+    background: black;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header,
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-header {
+  top: 0;
+}
+.modal.modal-fullscreen.force-fullscreen .modal-footer {
+  bottom: 0;
+}
+
+.modal-body {
+    background: radial-gradient( farthest-corner at 800px 0, #414141, black);
+}
+
+.modal-body h3, .modal-body h1{
+    color:white;
+    
+}
+.modal-body p{
+    color: #e1e1e1;
+    font-family: 'Roboto';
+    margin-bottom: 5px;
+    font-size: 15px;
+    
+}
+
+@media (max-width:750px){
+    .modal-body p {
+        font-size: 14px;
+    }
+    
+}
+
+.pens-title-header {
+    border-bottom: 5px solid #c40035;
+    margin-bottom: 20px;
+}
+
+.modal-header{
+    border-bottom: 0px solid #e5e5e5 !important;
+    
+}
+
+.modal-fullscreen-header{
+        background: #c40035;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Ubuntu'
+}
+
+.modal-header .close {
+    margin-top: -2px;
+    color: white;
+    opacity: 0.9;
+        font-size: 40px;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+/* FIM MODAL FULL SCREEN */
+
+
+/* PARALAXX */
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+
+.hero {position: relative; text-align: center}
+.hero-content {display: block; position: relative; z-index: 9999}
+
+.parallax {
+  display: block;
+  text-align: center;
+  padding: 15em 1em;
+        margin-bottom: 0em;
+    margin-top: -1.6em;
+  color: white; 
+    overflow: hidden;
+  
+}
+.parallax h1 { text-shadow: 1px 1px 2px black; margin-bottom: 15px; font-family: 'Ubuntu'}
+.parallax p {font-family: arial, sans-serif; font-size: 1em; text-transform: uppercase; letter-spacing: 0.1em; font-weight: bold; color: #ffffff; text-shadow: 0 10px 20px rgba(0, 0, 0, 0.61), 0 6px 6px rgba(0, 0, 0, 0.57);}
+
+.nyc {background: url(http://prestonise.com/images/nyc.jpg) no-repeat center center}
+
+.madrid {background: url(http://itecse.org/img/bg_video.png) bottom left repeat,
+    url(../img/foto01.jpg) top left  fixed;
+    padding: 15em 1em;
+    margin-bottom: 0em;
+    margin-top: 0em;
+        background-size: auto, cover;
+}
+
+
+.paris{
+   
+         
+    background: url(http://itecse.org/img/bg_video.png) bottom left repeat,
+        url(../img/possEJA.jpg) top left  fixed;
+    background-size: auto, cover;
+}
+
+
+.spacer {display: block; color: #333; font-family: arial, sans-serif; padding: 3em 0}
+.spacer h3 {font-family: lobster, sans-serif; font-size: 2em; margin-bottom: 15px}
+.spacer p {font-size: 15px; line-height: 22px; margin-bottom: 15px}
+button {border: 1px solid #aaa; padding: 0.75em 1.5em; border-radius: 4px; background: none; font-size: 1.25em; color: #555; display: inline-block; margin-right: -5px; vertical-align: top}
+button:hover {background: #00ace9; color: white; border-color: #00ace9; cursor: pointer}
+button.danger {margin-left: 25px; background: #d30; color: white; border-color: #d30}
+button.danger:hover {background: #a00; border-color: #a00}
+.container {max-width: 1170px;; margin: 0 auto; width: 95%}
+.centered {text-align: center; padding-bottom: 3.75em}
+
+
+.cleft-wrapper {
+position: relative;
+top: -1.25rem;
+margin-bottom: -1.25rem;
+left: 0;
+width: 100%;
+height: 1.25rem;
+overflow: hidden;
+}
+.cleft-left, .cleft-right {
+width: 50%;
+height: 1.25rem;
+background-color: #fff;
+position: absolute;
+top: 0;
+}
+.cleft-left {
+left: -1.5rem;
+}
+.cleft-right {
+right: -1.5rem;
+}
+.cleft-left:before, .cleft-right:before {
+content: ' ';
+display: block;
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+}
+.cleft-left:before {
+right: -1.5rem;
+border-width: 1.25rem 0 0 1.5rem;
+border-color: transparent transparent transparent #fff;
+}
+.cleft-right:before {
+left: -1.5rem;
+border-width: 1.25rem 1.5rem 0 0;
+border-color: transparent #fff transparent transparent;
+}
+
+.carrotBox {position: relative}
+.carrot {
+display: block;
+height: 0;
+width: 0;
+border-top: 1.25rem solid #fff;
+border-right: 1.5rem solid transparent;
+border-left: 1.5rem solid transparent;
+position: absolute;
+left: 50%;
+margin-left: -1.5rem;
+bottom: -1.25rem;
+}
+/* FIM PARALAXX*/
+
+
+/*SCROOLING BACKGROUND */
+
+
+.overlay{
+  position:unset;
+   background:url(../img/dummy.png);
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+  top:0;
+  left:0;
+  width:100%;
+ height:100%;
+ padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:0px -3000px;
+  }
+}
+
+
+/* FIM SCROOLING BACKGROUND*/
+
+/* CLIENTES*/
+#clientes h1, #clientes h2, #clientes p {
+    color:white;
+    text-align: center;
+    font-family: 'Ubuntu';
+}
+
+#clientes h1, #clientes h2{
+    text-transform: uppercase;
+    
+}
+/* FIM CLIENTES*/
+
+
+/* PROFILE CARD */
+.snip1578 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 40px 8px;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-size: 16px;
+    background: #c40035;
+  border-radius: 5px;
+    max-height: 80px;
+    box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.41);
+}
+
+.snip1578 *,
+.snip1578:before,
+.snip1578:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.snip1578 img {
+    max-width: 120px;
+    margin-top: -20px;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    backface-visibility: hidden;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 10px 10px 17px -5px rgba(0,0,0,0.41);
+}
+
+.snip1578 figcaption {
+  position: absolute;
+  top: 0;
+  right: 0%;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.snip1578 h3 {
+  margin: 0;
+    padding-left: 130px;
+  font-size: 1.2em;
+    font-family: 'Ubuntu';
+  font-weight: normal;
+    text-transform: uppercase;
+}
+
+.snip1578 .icons {
+  font-size: 1.6rem;
+}
+
+.snip1578 .icons a {
+  color: #ccc;
+}
+
+.snip1578 .icons a:hover {
+  color: #2980b9;
+}
+
+
+/* FIM PROFILE CARD */
+
+
+/* FOOTER*/
+
+.page-footer {
+    background-color: #232323;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: white;
+        display: grid;
+}
+
+.footer {
+    background-color: #bc1823;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    color: white;
+    padding-bottom: 60px;
+}
+
+.footer a {
+    color: #c4f1c1;
+}
+
+.footer a:hover {
+    color: #232323;
+}
+
+#footer p {
+    font-size: 16px;
+}
+
+#footer a {
+    font-size: 16px;
+}
+
+.top-razura{
+    
+        margin-top: -122px;
+    max-width: 100%;
+    min-height: 84px;
+    max-height: 84px;
+    z-index: 999999;
+}
+
+
+
+.bottom-razura {
+    margin-top: -50px;
+    max-width: 100%;
+    min-height: 84px;
+}
+
+
+
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.dribbble:before {
+  background-color: #f26798;
+}
+.social-btns .btn.dribbble .fa {
+  color: #f26798;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+width: 50px;
+    height: 50px;
+    line-height: 0px;
+    padding:5px;
+    margin: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
+/* FIM FOOTER*/
+
+
+/*PARCEIROS*/
+
+#parceiros
+{
+    padding: 0px 0px 30px 0px;
+   /* margin-top: -83px; Só se for colocar a imagem do efeito entre transições */ 
+    font-family: 'Ubuntu';
+    
+}
+
+#parceiros img{
+    max-width: 100%;
+ 
+    max-height: 94px;
+    
+}
+
+#parceiros .col-lg-3{
+       padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+#parceiros h1{
+    text-transform: uppercase;
+        padding-top: 30px;
+    text-align: center;
+}
+
+#parceiros p{
+    text-align: center;
+}
+
+
+/* FIM PARCEIROS*/
+
+/* PROCESSO*/
+
+#processo {
+    background: url(http://populove.net/wp-content/uploads/2016/02/footer_lodyas-2-1024x1024.png);
+    
+}
+
+#processo img{
+        max-width: 100%;
+    
+}
+
+#processo h1 {
+    font-size: 90px;
+    line-height: 110px;
+    text-transform: uppercase;
+    
+        text-transform: none;
+    
+    font: normal 700 32px Tungsten A,Tungsten B,Helvetica;
+    text-transform: uppercase;
+    font-family: 'Anton';
+    color: #32323c;
+    letter-spacing: 1px;
+}
+
+#processo h2 {
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+        text-transform: none;
+    font: normal 700 32px Tungsten A,Tungsten B,Helvetica;
+    text-transform: uppercase;
+    font-family: 'Anton';
+    color: #32323c;
+    letter-spacing: 1px;
+}
+
+
+/* RODA POR QUE CONTRATAR*/
+
+
+
+
+
+
+
+
+
+@media (max-width: 549px) {
+    
+       #processo h1 {
+    font-size: 36px;
+    line-height: 36px;
+           padding-bottom: 20px;
+                  letter-spacing: 1px;
+           text-align: center;
+           font-family: 'Ubuntu';
+    text-shadow: none;
+               margin-top: -20px;
+}
+    
+    #clientes h2 {
+ font-size: 1.3em;
+            margin-top: -50px;
+}
+    
+    blockquote {
+    font-size: 14px !important;
+}
+    
+    #quote-carousel {
+    margin-top: 20px !important;
+}
+    
+}
+
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+    
+           #processo h1 {
+    font-size: 57px;
+    line-height: 67px;
+}
+    
+             #processo h1 {
+    font-size: 30px;
+    line-height: 35px;
+}
+    
+        #clientes h2 {
+ font-size: 1.7em;
+}
+    
+    #quote-carousel {
+    margin-top: 20px !important;
+}
+
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+    
+       #processo h1 {
+  font-size: 36px;
+           font-family: 'Ubuntu';
+           text-align: center;
+}
+    
+        #clientes h2 {
+ font-size: 28px;
+}
+    
+    #quote-carousel {
+    margin-top: 20px !important;
+}
+    
+}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+    
+       #processo h1 {
+    font-size: 80px;
+    line-height: 100px;
+               font-family: 'Anton';
+           text-align: left;
+}
+    
+       #processo h2 {
+    font-size: 40px;
+    line-height: 50px;
+               font-family: 'Anton';
+           text-align: left;
+}
+    
+    
+    
+         .eja-circle{
+        float:right !important;
+    }
+    
+    #clientes h2 {
+ font-size:30px;
+}
+    
+    #quote-carousel {
+    margin-top: 20px !important;
+}
+    
+    
+    
+}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+ #processo h1 {
+font-size: 90px;
+    line-height: 110px;
+}
+    
+     #processo h2 {
+font-size: 45px;
+    line-height: 50px;
+}
+    
+        #clientes h2 {
+ font-size: 30px;
+}
+    
+    . eja-circle{
+        float:right !important;
+    }
+    
+}
+
+
+
+  @namespace svg url(http://www.w3.org/2000/svg);
+body {
+  margin: 0;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+svg {
+  overflow: hidden;
+  width: 10%;
+  max-height: 100%;
+}
+
+#cie-exam-cycle {
+  font-size: 300;
+  /*[id^="seg-"] {
+    transform-origin: 50% 50%;
+    transform: scale(1);
+  }*/
+}
+#cie-exam-cycle .segment {
+  fill: #0081c6;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+#cie-exam-cycle #seg-1 .segment {
+  fill: #0081c6;
+}
+#cie-exam-cycle #seg-2 .segment {
+  fill: #4694d0;
+}
+#cie-exam-cycle #seg-3 .segment {
+  fill: #88b2df;
+}
+#cie-exam-cycle #seg-4 .segment {
+  fill: #adc8e9;
+}
+#cie-exam-cycle #seg-5 .segment {
+  fill: #c7d8ef;
+}
+#cie-exam-cycle #seg-6 .segment {
+  fill: #eef2fa;
+}
+#cie-exam-cycle a,
+#cie-exam-cycle .segment,
+#cie-exam-cycle .circle,
+#cie-exam-cycle .step-description,
+#cie-exam-cycle .step-detail {
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+#cie-exam-cycle a {
+  transform-origin: 50% 50%;
+  transform: scale(1);
+    text-decoration: none; 
+}
+#cie-exam-cycle a:hover .segment, #cie-exam-cycle a:focus .segment {
+  fill: #c60036 !important;
+    text-decoration: none;
+}
+#cie-exam-cycle a:hover .circle, #cie-exam-cycle a:focus .circle {
+  fill: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+#cie-exam-cycle a:hover .step-description,
+#cie-exam-cycle a:hover .step-detail, #cie-exam-cycle a:focus .step-description,
+#cie-exam-cycle a:focus .step-detail {
+  fill: #fff;
+    text-decoration: none;
+}
+#cie-exam-cycle .circle {
+  fill: #fff;
+  font-size: 4em;
+  baseline-shift: -14%;
+}
+#cie-exam-cycle .number {
+  font-size: 1.5em;
+}
+#cie-exam-cycle .step-description {
+  font-weight: 600;
+    text-decoration: none;
+}
+#cie-exam-cycle .step-detail {
+  font-size: .8em;
+}
+#cie-exam-cycle .active .segment {
+  fill: #c60036 !important;
+}
+#cie-exam-cycle .active .circle {
+  fill: rgba(0, 0, 0, 0.3);
+}
+#cie-exam-cycle .active .step-description {
+  fill: #fff;
+    text-decoration: none;
+}
+
+.my-svg-alternate {
+  display: none;
+}
+
+.no-svg .my-svg-alternate {
+  display: block;
+  width: 500px;
+  height: 500px;
+  background-image: url(http://placehold.it/500x500);
+}
+
+/* FIM PROCESSO */
+
+/* TESTIMONIAL */
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 20px;
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+#quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+#quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+/* FIM TESTIMONIAL */
+
+
+
+/* ROCKET*/
+
+svg {
+
+}
+
+
+
+#rocket {
+  -webkit-animation: shakes 0.5s linear infinite;
+          animation: shakes 0.5s linear infinite;
+}
+@-webkit-keyframes shakes {
+  10% {
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px);
+  }
+  20% {
+    -webkit-transform: translate(4px, 2px);
+            transform: translate(4px, 2px);
+  }
+  30% {
+    -webkit-transform: translate(1px, 5px);
+            transform: translate(1px, 5px);
+  }
+  40% {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px);
+  }
+  60% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px);
+  }
+  70% {
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px);
+  }
+  80% {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
+  }
+  90% {
+    -webkit-transform: translate(4px, 2px);
+            transform: translate(4px, 2px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes shakes {
+  10% {
+    -webkit-transform: translate(1px, 2px);
+            transform: translate(1px, 2px);
+  }
+  20% {
+    -webkit-transform: translate(4px, 2px);
+            transform: translate(4px, 2px);
+  }
+  30% {
+    -webkit-transform: translate(1px, 5px);
+            transform: translate(1px, 5px);
+  }
+  40% {
+    -webkit-transform: translate(5px, 2px);
+            transform: translate(5px, 2px);
+  }
+  50% {
+    -webkit-transform: translate(5px, 3px);
+            transform: translate(5px, 3px);
+  }
+  60% {
+    -webkit-transform: translate(4px, 5px);
+            transform: translate(4px, 5px);
+  }
+  70% {
+    -webkit-transform: translate(4px, 3px);
+            transform: translate(4px, 3px);
+  }
+  80% {
+    -webkit-transform: translate(3px, 3px);
+            transform: translate(3px, 3px);
+  }
+  90% {
+    -webkit-transform: translate(4px, 2px);
+            transform: translate(4px, 2px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+#rocket path, #rocket circle, #rocket polygon {
+  fill: #32323c;
+}
+#rocket circle {
+  cx: 369.5;
+  cy: 331.8;
+  r: 7;
+}
+#rocket polygon {
+  -webkit-animation: burst 0.5s infinite;
+          animation: burst 0.5s infinite;
+  -webkit-transform-origin: 363px 337px;
+          transform-origin: 363px 337px;
+}
+
+
+/* FIM ROCKET*/
+
+
+/* PROCESS LIST*/
+
+#processo .list {
+    list-style: none;
+    max-width: 100%;
+}
+
+#processo .item {
+    display: block;
+    clear: both;
+    counter-increment: list;
+    padding-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.375;
+    position: relative;
+}
+
+#processo .item:before {
+    font: bold 2.25rem/1 var(--font-number);
+    content: counter(list);
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin: 0 1.5rem 0.75rem 0;
+    color: var(--bg);
+    background: var(--highlight1) -webkit-linear-gradient(top left, var(--highlight1) 25%, var(--highlight2));
+    background: var(--highlight1) linear-gradient(to bottom right, var(--highlight1) 25%, var(--highlight2));
+    text-shadow: 0 0 2px var(--highlight1);
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-shape-outside: ellipse();
+            shape-outside: ellipse();
+    z-index: 1;
+}
+
+#processo .item:after {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: var(--highlight1);
+    z-index: -1;
+    border-top-left-radius: 3px;
+}
+
+
+#processo .headline {
+    padding: 1rem 0 0 0;
+    margin: 0 0 1rem 0;
+}
+
+
+:root {
+    --bg: #fdfdfd;
+    --highlight1: #ED4264;
+    --highlight2: #FFEDBC;
+    --color: #1a1e24;
+    --font-number: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+    --font-head: "Space Mono", Consolas, Menlo, Monaco, "Courier New", monospace;
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* PROCESS LIST */
+
+
+
+/*HEXAGONO */
+
+
+
+
+a:hover::before {
+
+}
+
+
+
+.hexagon {
+     transition: background-color 0.5s ease;
+    transition:   border-radius: 0.5s ease;
+    transition: transform 200ms ease-in;
+    
+  position: relative;
+  display: inline-block;
+  /* left/right margin approx. 25% of .hexagon width + spacing */
+  margin: 1px 27px;
+  background-color: rgb(196,0,53);
+
+  text-align: center;
+}
+.hexagon, .hexagon::before, .hexagon::after {
+  /* easy way: height is width * 1.732
+  actual formula is 2*(width/(2*Math.tan(Math.PI/6)))
+  remove border-radius for sharp corners on hexagons */
+    width: 100px;
+    height: 174px;
+    border-radius: 1%/2%;
+   
+}
+.hexagon::before {
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(-60deg);
+}
+.hexagon::after {
+  background-color: inherit;
+  content: "";
+  position: absolute;
+  left: 0;
+  transform: rotate(60deg);
+    
+   
+}
+.hexagon:nth-child(even) {
+  /* top approx. 50% of .hexagon height + spacing */
+  top: 89px;
+}
+.hexagon:hover {
+  background-color: #ec2937;
+  cursor: pointer;
+  z-index: 105;
+    color:white;
+       transform: scale(1.3);
+ 
+    
+}
+
+
+
+.hexagon:active {
+  background-color: rgb(196,0,53);
+  z-index: 110;
+}
+.hexanone {
+  position: relative;
+  display: inline-block;
+  width: 67px;
+  height: 116px;
+  margin: 1px 18px;
+}
+.hexanone:nth-child(even) {
+  top: 59px;
+}
+.hexagontent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+      color: rgba(255, 255, 255, 0.8);
+  transform: translate(-50%, -50%);
+  width: 140%;
+  font-size: 2rem;
+  line-height: 1.2;
+  z-index: 100;
+}
+
+.hexagontent:hover {
+    color: white;
+  
+}
+
+
+.ibws-fix {
+  /* inline-block whitespace fix */
+  font-size: 0;
+}
+.honeycomb {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hex-invisible{
+    background-color: transparent !important;
+
+    
+}
+.hex-invisible:hover{
+    cursor: default;
+    
+    
+}
+
+/* FIM HEXAGONO */
+
+
+
+/* YOUTUBE EMBED */
+
+
+.youtube { /* continer (responsive) */
+  position: relative;
+  cursor: pointer;
+  background: #ccc no-repeat center center / cover; 
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0px;
+  clear:both;
+}
+
+.youtube::before { /* play bubble */
+  content: '';
+  background: rgba(255, 255, 255, .6);
+  height: 80px;
+  width: 80px;
+  display:block;
+  margin: -40px 0 0 -40px;
+  border-radius: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 0 20px 3px rgba(51, 51, 51, .8);
+  transition: all .1s ease;
+  z-index:1;
+}
+
+.youtube:hover::before { /* play bubble hover */
+  background: rgba(238, 238, 238, .8);
+  box-shadow: 0 0 10px 3px rgba(51, 51, 51, .8);
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+}
+
+.youtube::after { /* Play Triangle */
+  content: '';
+  width: 0;
+  height: 0;
+  line-height:0px;
+  display:block;
+  border-style: solid;
+  border-width: 20px 0 20px 40px;
+  margin: -20px 0 0 -15px;
+  border-color: transparent transparent transparent #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  z-index:2;
+} 
+.youtube iframe{ /* youtube embed (responsive) */
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:3;
+}
+/* END Fast & Agile YouTube Embed by Schoberg.net */
+/* FIM YOUTUBE EMBED */
+
+
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+*******************************/
+
+.panel-heading {
+  padding: 0;
+	border:0;
+    	background-color: rgb(196,0,53) !important;
+}
+.panel-title>a , .panel-title>a:active{
+	display:block;
+	padding:15px;
+  color: rgba(255, 255, 255, 0.8)  !important;
+  font-size:16px;
+  font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1px;
+  word-spacing:3px;
+	text-decoration:none !important;
+}
+
+.panel-heading.active {
+  
+   background: linear-gradient(to right, rgb(145,0,39)  0%, rgb(171,0,46)  100%);
+    background-size: 100% 100%;
+    background-position:left right;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+
+.panel-heading.active>.panel-title>a{
+	color:white !important;
+	text-decoration:none !important;
+}
+
+.panel-title>a, .panel-title>a:hover{
+	color:white;
+	text-decoration:none !important;
+}
+
+.panel-heading  a:before {
+   font-family: 'Glyphicons Halflings';
+   content: "\e114";
+   float: right;
+   transition: all 0.5s;
+}
+.panel-heading.active a:before {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	transform: rotate(180deg);
+} 
+
+
+
+
+/*******************************
+* FIM DO ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+*******************************/
